@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ekeby Gårdsbryggeri | sommer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="root">
+      <section id="navbar">
+        <div class="companyLogo">
+          <img
+            src="./src/assets/companyLogo1.png"
+            alt="company logo"
+            id="refresh"
+          />
+        </div>
+        <div class="navigationOptions">
+          <div class="option">
+            <a href="https://ekeby.no">bryggeriet</a>
+          </div>
+          <div class="option">
+            <a href="#">placeholder</a>
+          </div>
+          <div class="option">
+            <a href="https://www.facebook.com/ekebygaard/">facebook</a>
+          </div>
+        </div>
+      </section>
+      <div class="outerContainer">
+        <section id="heroPage">
+          <div class="left">
+            <div class="imageContainer">
+              <img src="./src/assets/beerCocktail2.png" alt="drink1" />
+            </div>
+            <div class="info">
+              <p>
+                <a href="https://ekeby.no">Ekeby Gårdsbryggeri</a> er et lokalt
+                bryggeri i Moss, kjent for håndverksøl brygget med nøye utvalgte
+                råvarer fra lokale og internasjonalt anerkjente kilder.
+              </p>
+              <p>
+                Vi henter inspirasjon fra britiske, belgiske og amerikanske
+                bryggetradisjoner.
+              </p>
+              <p>
+                I vårt gårdsutsalg tilbyr vi et variert utvalg av faste
+                ølstiler, sesongbaserte varianter og spennende eksperimenter.
+              </p>
+              <p>
+                Besøk oss i den idylliske låven på
+                <a
+                  href="https://www.google.no/maps/place/Ekeby+Gårdsbryggeri/@59.3881691,10.6635267,17z/data=!3m1!4b1!4m6!3m5!1s0x4646ad66d2a74b17:0xd7071e91aec38067!8m2!3d59.3881664!4d10.666107!16s%2Fg%2F11jmysrp2r?entry=ttu"
+                >
+                  Ekeby Gård
+                </a>
+                i Moss, hvor du kan oppleve duften av malt og slå av en prat med
+                oss eller ta en titt på bryggeriet.
+              </p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="titleContainer">
+              <div class="title">
+                <p>Ekeby Gårdsbryggeri</p>
+              </div>
+            </div>
+            <div class="imageContainer">
+              <img src="./src/assets/grapefruitShandy.png" alt="drink2" />
+            </div>
+          </div>
+        </section>
+        <section id="adPage">
+          <div class="left">
+            <div class="imageContainer">
+              <img src="./src/assets/summerShandy.png" alt="new drink" />
+            </div>
+          </div>
+          <div class="right">
+            <div class="info">
+              <p id="titleThing">vinn en kasse av vår nye sommer øl</p>
+              <p>
+                Vi har arrangert en konkurranse rundt den nye brusen hvor
+                vinneren har muligheten til å vinne en kasse med brus.
+              </p>
+              <p>
+                Registrer deg for konkurransen her, som er en representasjon av
+                Ekeby Gårdsbryggeri og den nye brusen.
+              </p>
+            </div>
+            <div class="form">
+              <form id="entryForm">
+                <div class="emailSection">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="phoneSection">
+                  <label for="phone">Telefonnummer:</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9]{8,}"
+                    required
+                  />
+                </div>
+                <div class="submitSection">
+                  <button type="submit" id="submitBtn">Send inn</button>
+                </div>
+              </form>
+            </div>
+            <div></div>
+          </div>
+        </section>
+        <section id="footer">
+          <div class="title">Ekeby Gårdsbryggeri | sommer 2024</div>
+          <div class="info">©2024 filipryan.dev - All Rights Reserved.</div>
+        </section>
+      </div>
+    </section>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>

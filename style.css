@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+}
+
+:root {
+  --max-content-width: clamp(120rem, 12vw, 140rem);
+  --padding-base: max(
+    1rem,
+    min(
+      clamp(6vw, 30vw, 18vw) - clamp(1.05rem, 12vw, clamp(3.5rem, 12vw, 3rem))
+    )
+  );
+
+  --text-base: rgb(127, 126, 11);
+  --text-highlight: rgb(86, 85, 7);
+  --text-hover: rgb(108, 108, 9);
+
+  --bg-base: rgb(246, 225, 180);
+}
+
+.root {
+  background: var(--bg-base);
+  height: 100%;
+}
+
+.root .outerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(5rem, 2.4vw, 6rem) var(--padding-base) 0;
+  padding-bottom: 3rem;
+  max-width: var(--max-content-width);
+}
+
+#navbar {
+  background-color: var(--bg-base);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(0rem, 2.4vw, 0rem) var(--padding-base) 0;
+  max-width: var(--max-content-width);
+  z-index: 1000;
+}
+
+#navbar .companyLogo img {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+#navbar .navigationOptions {
+  display: flex;
+  gap: 1rem;
+}
+#navbar .navigationOptions .option {
+  font-size: 0.9rem;
+  font-family: "inter", sans-serif;
+
+  a {
+    color: var(--text-base);
+  }
+}
+#navbar .navigationOptions .option:hover {
+  a {
+    color: var(--text-highlight);
+  }
+}
+
+#heroPage {
+  display: flex;
+  gap: 2rem;
+}
+#heroPage .left {
+  display: flex;
+  flex-direction: column;
+}
+#heroPage .left .imageContainer img {
+  width: 431px;
+  height: 287px;
+}
+
+#heroPage .left .info {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--text-base);
+}
+#heroPage .left .info a {
+  color: var(--text-highlight);
+}
+#heroPage .left .info a:hover {
+  color: var(--text-hover);
+  cursor: pointer;
+}
+
+#heroPage .right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#heroPage .right .titleContainer {
+  display: flex;
+  height: 175px;
+  align-items: center;
+  position: relative;
+}
+
+#heroPage .right .titleContainer .title {
+  position: absolute;
+  transform: translateX(-6.5rem);
+  font-size: 3.6rem;
+  color: var(--text-base);
+}
+
+#heroPage .right .imageContainer img {
+  width: 350px;
+  height: 522px;
+  background-size: cover;
+}
+
+#adPage {
+  color: var(--text-base);
+  height: 100dvh;
+  padding-top: 3rem;
+}
+
+#adPage {
+  display: flex;
+  gap: 2rem;
+}
+#adPage .left .imageContainer img {
+  width: 400px;
+  height: 500px;
+}
+
+#adPage .right .info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  #titleThing {
+    font-size: 1.5rem;
+  }
+}
+
+#adPage .right .form form {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#adPage .right .form form .emailSection {
+  input {
+    background-color: transparent;
+    border-bottom: 1px solid var(--text-base);
+    color: var(--text-base);
+  }
+}
+#adPage .right .form form .emailSection:active {
+  input {
+    outline: none;
+  }
+}
+#adPage .right .form form .phoneSection {
+  input {
+    background-color: transparent;
+    border-bottom: 1px solid var(--text-base);
+    color: var(--text-base);
+  }
+}
+#adPage .right .form form .submitSection {
+  button {
+    border: 1px solid var(--text-base);
+    background-color: transparent;
+    padding: 0.3rem;
+    color: var(--text-base);
+  }
+}
+
+#footer {
+  color: var(--text-base);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 5rem;
+}
